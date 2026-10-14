@@ -3,56 +3,85 @@
 
 <head>
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>فابلی آتلیه | اصالت در طراحی، وقار در حضور</title>
+    <meta name="theme-color" content="#F6F4EF">
 
     <meta name="description"
-          content="فابلی آتلیه؛ طراحی پوشاک زنانه با تمرکز بر اصالت، ظرافت و وقار.">
+          content="FABELLI Atelier؛ آتلیه طراحی پوشاک زنانه با نگاهی معاصر به اصالت، ظرافت و هنر دوخت.">
 
-    <meta name="theme-color" content="#f7f5f0">
+    <title>FABELLI Atelier | اصالت در طراحی، وقار در حضور</title>
 
-    <link rel="stylesheet" href="style.css">
-
+    <!-- Typography -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700&display=swap"
-          rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Vazirmatn:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
 
-    <!-- نوار بالای سایت -->
+    <!-- Announcement Bar -->
     <div class="announcement">
-        فابلی آتلیه؛ روایت تازه‌ای از ظرافت و اصالت
+        <span class="announcement-en" dir="ltr">FABELLI ATELIER</span>
+
+        <span class="announcement-divider"></span>
+
+        <span>اصالت، در روایتی معاصر</span>
     </div>
 
-    <!-- سربرگ -->
-    <header class="header">
 
-        <a href="#home" class="logo" aria-label="صفحه اصلی فابلی">
+    <!-- Header -->
+    <header class="site-header">
 
-            <span class="logo-name">FABELLI</span>
+        <a class="brand" href="#home" aria-label="صفحه اصلی فابلی آتلیه">
 
-            <span class="logo-subtitle">ATELIER</span>
+            <span class="brand-name" dir="ltr">FABELLI</span>
+
+            <span class="brand-caption" dir="ltr">A T E L I E R</span>
 
         </a>
 
-        <nav class="navigation" aria-label="منوی اصلی">
 
-            <a href="#home">صفحه اصلی</a>
+        <nav class="main-nav" aria-label="منوی اصلی">
 
-            <a href="#collections">مجموعه‌ها</a>
+            <a href="#home">
+                <span class="nav-en" dir="ltr">HOME</span>
+                <span class="nav-fa">خانه</span>
+            </a>
 
-            <a href="#story">داستان ما</a>
+            <a href="#collections">
+                <span class="nav-en" dir="ltr">COLLECTIONS</span>
+                <span class="nav-fa">مجموعه‌ها</span>
+            </a>
 
-            <a href="#atelier">آتلیه طراحی</a>
+            <a href="#philosophy">
+                <span class="nav-en" dir="ltr">OUR PHILOSOPHY</span>
+                <span class="nav-fa">فلسفه برند</span>
+            </a>
+
+            <a href="#atelier">
+                <span class="nav-en" dir="ltr">THE ATELIER</span>
+                <span class="nav-fa">آتلیه طراحی</span>
+            </a>
 
         </nav>
 
-        <a href="#contact" class="header-contact">
-            ارتباط با ما <span>↖</span>
+
+        <a class="header-link" href="#contact">
+
+            <span>ارتباط با ما</span>
+
+            <span class="arrow" aria-hidden="true">↖</span>
+
         </a>
 
     </header>
@@ -60,95 +89,164 @@
 
     <main>
 
-        <!-- بخش اصلی -->
+        <!-- Hero -->
         <section class="hero" id="home">
 
-            <div class="hero-placeholder" aria-hidden="true"></div>
+            <!-- تصویر اصلی در مرحله تصاویر اضافه می‌شود -->
+            <div class="hero-visual" aria-hidden="true">
 
-            <div class="hero-overlay"></div>
+                <div class="visual-placeholder"></div>
+
+                <div class="visual-grain"></div>
+
+            </div>
+
 
             <div class="hero-content">
 
-                <p class="eyebrow">
-                    هنر پوشیدگی، زیبایی و ظرافت
-                </p>
+                <div class="hero-kicker">
 
-                <h1>
-                    زیبایی در جزئیات،<br>
-                    <span>اصالت در طراحی</span>
+                    <span class="hero-kicker-line"></span>
+
+                    <span dir="ltr">CONTEMPORARY MODEST COUTURE</span>
+
+                </div>
+
+
+                <h1 class="hero-title">
+
+                    ظرافتی<br>
+
+                    <span class="hero-title-second">
+                        ریشه‌دار در <em>اصالت</em>
+                    </span>
+
                 </h1>
 
+
                 <p class="hero-description">
-                    نگاهی معاصر به پوشاک زنانه؛
-                    جایی که ظرافت، وقار و هویت در کنار هم معنا پیدا می‌کنند.
+
+                    روایتی از زنانگی معاصر؛
+
+                    <br class="desktop-break">
+
+                    در تلاقی هنر طراحی، وقار و جزئیات ماندگار.
+
                 </p>
 
-                <a href="#collections" class="button button-light">
-                    کشف مجموعه‌ها
-                    <span>←</span>
+
+                <a href="#collections" class="hero-cta">
+
+                    <span class="cta-label">کشف دنیای فابلی</span>
+
+                    <span class="cta-en" dir="ltr">EXPLORE THE COLLECTION</span>
+
+                    <span class="cta-arrow" aria-hidden="true">↙</span>
+
                 </a>
 
             </div>
 
+
+            <div class="hero-side-note" dir="ltr">
+
+                <span>01</span>
+
+                <span class="side-note-line"></span>
+
+                <span>EST. FABELLI</span>
+
+            </div>
+
+
             <div class="hero-bottom">
 
-                <span>طراحی با نگاهی ماندگار</span>
+                <span>اصالت در طراحی، وقار در حضور</span>
 
-                <span>فابلی آتلیه</span>
+                <span dir="ltr">DESIGNED WITH INTENTION</span>
 
             </div>
 
         </section>
 
 
-        <!-- معرفی برند -->
-        <section class="introduction" id="story">
+        <!-- Brand Philosophy -->
+        <section class="philosophy section-padding" id="philosophy">
 
-            <p class="eyebrow">
-                فلسفه فابلی
-            </p>
+            <div class="section-index">
 
-            <h2>
-                پیوند <span>اصالت</span> با<br>
-                زنانگی معاصر
-            </h2>
+                <span class="index-number" dir="ltr">01 /</span>
 
-            <p class="intro-description">
-                در فابلی آتلیه، هر طراحی داستانی از ظرافت،
-                هویت و توجه به جزئیات را روایت می‌کند.
-                ما به زیبایی ماندگار باور داریم؛
-                زیبایی‌ای که در انتخاب پارچه، فرم لباس
-                و ظرافت دوخت معنا پیدا می‌کند.
-            </p>
+                <span class="index-label">فلسفه فابلی</span>
 
-            <a href="#atelier" class="text-link">
-                آشنایی با دنیای فابلی
-                <span>←</span>
-            </a>
+            </div>
+
+
+            <div class="philosophy-main">
+
+                <p class="eyebrow" dir="ltr">A PHILOSOPHY OF ELEGANCE</p>
+
+                <h2>
+
+                    زیبایی در آن چیزی‌ست
+
+                    <br>
+
+                    که با <em>دقت</em> انتخاب می‌شود.
+
+                </h2>
+
+            </div>
+
+
+            <div class="philosophy-bottom">
+
+                <p class="philosophy-copy">
+
+                    ما در فابلی به طراحی فراتر از ظاهر نگاه می‌کنیم.
+
+                    هر فرم، هر بافت و هر جزئیات، بخشی از روایتی‌ست
+
+                    که میان اصالت و نگاه امروز شکل می‌گیرد.
+
+                </p>
+
+
+                <div class="philosophy-signature">
+
+                    <span dir="ltr">FABELLI</span>
+
+                    <span>طراحی با هویت، زیبایی با معنا</span>
+
+                </div>
+
+            </div>
 
         </section>
 
 
-        <!-- مجموعه ها -->
-        <section class="collections" id="collections">
+        <!-- Collections -->
+        <section class="collections section-padding" id="collections">
 
             <div class="section-heading">
 
                 <div>
 
-                    <p class="eyebrow">
-                        انتخاب‌شده با دقت
-                    </p>
+                    <p class="eyebrow" dir="ltr">CURATED COLLECTIONS</p>
 
                     <h2>
-                        مجموعه‌های <span>فابلی</span>
+                        جهان <em>فابلی</em>
                     </h2>
 
                 </div>
 
-                <p class="section-description">
-                    طراحی سنجیده، فرم‌های ظریف
-                    و زیبایی فراتر از زمان.
+
+                <p class="section-intro">
+
+                    مجموعه‌هایی برای زنی که
+
+                    به ظرافت، کیفیت و هویت اهمیت می‌دهد.
+
                 </p>
 
             </div>
@@ -156,87 +254,118 @@
 
             <div class="collection-grid">
 
-                <a href="#contact" class="collection-card">
+                <!-- Collection 01 -->
+                <a class="collection-card collection-card-large"
+                   href="#contact">
 
-                    <div class="collection-image image-placeholder">
+                    <div class="collection-visual visual-placeholder">
 
-                        <span class="image-label">
-                            تصویر مجموعه عبا
+                        <span class="collection-index" dir="ltr">01</span>
+
+                        <span class="collection-placeholder-label">
+
+                            تصویر اختصاصی کالکشن عبا
+
                         </span>
 
-                        <span class="collection-number">۰۱</span>
+                        <span class="collection-visual-en" dir="ltr">
+
+                            THE ABAYA EDIT
+
+                        </span>
 
                     </div>
 
-                    <div class="collection-info">
+
+                    <div class="collection-meta">
 
                         <div>
 
-                            <h3>عبا</h3>
+                            <p class="collection-en" dir="ltr">THE ABAYA EDIT</p>
 
-                            <p>وقار در هر فرم</p>
+                            <h3>عبا؛ شکوه در سادگی</h3>
 
                         </div>
 
-                        <span class="collection-arrow">↖</span>
+                        <span class="collection-arrow" aria-hidden="true">↙</span>
 
                     </div>
 
                 </a>
 
 
-                <a href="#contact" class="collection-card">
+                <!-- Collection 02 -->
+                <a class="collection-card" href="#contact">
 
-                    <div class="collection-image image-placeholder">
+                    <div class="collection-visual visual-placeholder">
 
-                        <span class="image-label">
-                            تصویر پوشاک روزمره
+                        <span class="collection-index" dir="ltr">02</span>
+
+                        <span class="collection-placeholder-label">
+
+                            تصویر اختصاصی پوشاک زنانه
+
                         </span>
 
-                        <span class="collection-number">۰۲</span>
+                        <span class="collection-visual-en" dir="ltr">
+
+                            EVERYDAY ELEGANCE
+
+                        </span>
 
                     </div>
 
-                    <div class="collection-info">
+
+                    <div class="collection-meta">
 
                         <div>
+
+                            <p class="collection-en" dir="ltr">EVERYDAY ELEGANCE</p>
 
                             <h3>پوشاک زنانه</h3>
 
-                            <p>ظرافت در زندگی روزمره</p>
-
                         </div>
 
-                        <span class="collection-arrow">↖</span>
+                        <span class="collection-arrow" aria-hidden="true">↙</span>
 
                     </div>
 
                 </a>
 
 
-                <a href="#contact" class="collection-card">
+                <!-- Collection 03 -->
+                <a class="collection-card" href="#contact">
 
-                    <div class="collection-image image-placeholder">
+                    <div class="collection-visual visual-placeholder">
 
-                        <span class="image-label">
-                            تصویر لباس مجلسی
+                        <span class="collection-index" dir="ltr">03</span>
+
+                        <span class="collection-placeholder-label">
+
+                            تصویر اختصاصی لباس مجلسی
+
                         </span>
 
-                        <span class="collection-number">۰۳</span>
+                        <span class="collection-visual-en" dir="ltr">
+
+                            EVENING COUTURE
+
+                        </span>
 
                     </div>
 
-                    <div class="collection-info">
+
+                    <div class="collection-meta">
 
                         <div>
 
-                            <h3>لباس مجلسی</h3>
+                            <p class="collection-en" dir="ltr">EVENING COUTURE</p>
 
-                            <p>برای لحظه‌های ماندگار</p>
+                            <h3>لباس مجلسی</h3>
 
                         </div>
 
-                        <span class="collection-arrow">↖</span>
+                        <span class="collection-arrow" aria-hidden="true">↙</span>
 
                     </div>
 
@@ -247,38 +376,78 @@
         </section>
 
 
-        <!-- آتلیه طراحی -->
+        <!-- Atelier -->
         <section class="atelier" id="atelier">
 
-            <div class="atelier-image image-placeholder">
+            <div class="atelier-visual visual-placeholder">
 
-                <span class="image-label">
-                    تصویر آتلیه طراحی فابلی
+                <span class="atelier-image-label" dir="ltr">
+
+                    INSIDE THE ATELIER
+
+                </span>
+
+                <span class="atelier-image-caption">
+
+                    تصویر اختصاصی فضای طراحی و خلق لباس
+
                 </span>
 
             </div>
 
+
             <div class="atelier-content">
 
-                <p class="eyebrow">
-                    از ایده تا آفرینش
+                <div class="section-index">
+
+                    <span class="index-number" dir="ltr">02 /</span>
+
+                    <span class="index-label">فرایند آفرینش</span>
+
+                </div>
+
+
+                <p class="eyebrow" dir="ltr">
+
+                    THE ART OF CREATION
+
                 </p>
+
 
                 <h2>
-                    هنرِ خلق<br>
-                    <span>یک طراحی ماندگار</span>
+
+                    از نخستین طرح
+
+                    <br>
+
+                    تا <em>آخرین جزئیات</em>
+
                 </h2>
 
-                <p>
-                    هر لباس از یک ایده آغاز می‌شود.
-                    از طراحی اولیه و انتخاب پارچه تا فرم‌دهی
-                    و ظرافت دوخت، هر مرحله بخشی از داستان
-                    شکل‌گیری یک اثر منحصربه‌فرد است.
+
+                <p class="atelier-description">
+
+                    در آتلیه فابلی، طراحی با یک ایده آغاز می‌شود؛
+
+                    با انتخاب پارچه، شناخت فرم و توجه به ظرافت دوخت
+
+                    ادامه پیدا می‌کند و به لباسی با هویت مستقل می‌رسد.
+
                 </p>
 
-                <a href="#contact" class="button button-dark">
-                    دنیای طراحی فابلی
-                    <span>←</span>
+
+                <a href="#contact" class="atelier-link">
+
+                    <span>دنیای طراحی فابلی</span>
+
+                    <span class="atelier-link-en" dir="ltr">
+
+                        DISCOVER OUR PROCESS
+
+                    </span>
+
+                    <span aria-hidden="true">↙</span>
+
                 </a>
 
             </div>
@@ -286,46 +455,70 @@
         </section>
 
 
-        <!-- شعار برند -->
+        <!-- Brand Statement -->
         <section class="brand-statement">
 
-            <span class="statement-mark">FB</span>
+            <div class="statement-top" dir="ltr">
 
-            <p class="eyebrow">
-                امضای فابلی
-            </p>
+                <span>F</span>
+
+                <span class="statement-star">✳</span>
+
+                <span>B</span>
+
+            </div>
+
+
+            <p class="eyebrow" dir="ltr">THE FABELLI SIGNATURE</p>
+
 
             <h2>
-                اصالت در طراحی،<br>
+
+                اصالت در طراحی،
+
+                <br>
+
                 وقار در حضور
+
             </h2>
 
-            <p class="statement-english">
-                FABELLI ATELIER
+
+            <p class="statement-caption" dir="ltr">
+
+                AUTHENTIC IN DESIGN. TIMELESS IN PRESENCE.
+
             </p>
 
         </section>
 
+
     </main>
 
 
-    <!-- پابرگ -->
-    <footer class="footer" id="contact">
+    <!-- Footer -->
+    <footer class="site-footer" id="contact">
 
-        <div class="footer-top">
+        <div class="footer-main">
 
             <div class="footer-brand">
 
-                <a href="#home" class="logo footer-logo">
+                <a href="#home" class="brand footer-logo">
 
-                    <span class="logo-name">FABELLI</span>
+                    <span class="brand-name" dir="ltr">FABELLI</span>
 
-                    <span class="logo-subtitle">ATELIER</span>
+                    <span class="brand-caption" dir="ltr">A T E L I E R</span>
 
                 </a>
 
+
                 <p>
-                    اصالت در طراحی، وقار در حضور
+
+                    طراحی با هویت؛
+
+                    <br>
+
+                    زیبایی با معنا.
+
                 </p>
 
             </div>
@@ -333,13 +526,13 @@
 
             <div class="footer-column">
 
-                <h4>دسترسی سریع</h4>
+                <h3>دسترسی سریع</h3>
 
                 <a href="#home">صفحه اصلی</a>
 
                 <a href="#collections">مجموعه‌ها</a>
 
-                <a href="#story">داستان برند</a>
+                <a href="#philosophy">فلسفه برند</a>
 
                 <a href="#atelier">آتلیه طراحی</a>
 
@@ -348,16 +541,24 @@
 
             <div class="footer-column">
 
-                <h4>ارتباط با فابلی</h4>
+                <h3>با فابلی در ارتباط باشید</h3>
 
                 <a href="https://instagram.com/fatemehkhalili"
                    target="_blank"
                    rel="noopener noreferrer">
-                    اینستاگرام ↖
+
+                    اینستاگرام
+
+                    <span dir="ltr">↖</span>
+
                 </a>
 
                 <a href="mailto:info@fabelliatelier.ir">
+
                     پست الکترونیکی
+
+                    <span dir="ltr">↖</span>
+
                 </a>
 
             </div>
@@ -368,12 +569,22 @@
         <div class="footer-bottom">
 
             <span>
-                تمامی حقوق برای فابلی آتلیه محفوظ است.
+
+                © 2026 FABELLI ATELIER
+
             </span>
 
             <span>
-                FABELLI ATELIER © 2026
+
+                تمامی حقوق محفوظ است.
+
             </span>
+
+            <a href="#home">
+
+                بازگشت به بالا ↑
+
+            </a>
 
         </div>
 
